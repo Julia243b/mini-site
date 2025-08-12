@@ -1,0 +1,19 @@
+/* Reset de estilo - Estamos removendo todos os estilos padrões do navegador */
+
+/* seletor global - Ou seja, todos os elementos da nossa estrutura receberam essas configurações */
+*{
+    /* margin-top */
+    margin: 0;
+    padding: 0;
+
+    /* text-decoration tirar a configuração os elementos link (aquela linha que fica) */
+
+    /*  none - nenhum */
+    text-decoration: none;
+}
+
+body{
+    font-family: "Arimo", sans-serif;
+    background-color: #420042;
+    color: #fafafa;
+}
