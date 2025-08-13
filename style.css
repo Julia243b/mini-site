@@ -10,10 +10,79 @@
 
     /*  none - nenhum */
     text-decoration: none;
+
+    /* remove os marcadores(prontinhos) das listas */
+    list-style: none; 
 }
 
 body{
     font-family: "Arimo", sans-serif;
-    background-color: #420042;
+    background-color: rgb(66, 0, 66);
     color: #fafafa;
+}
+
+header{
+    background-color: rgb(93, 11, 109);
+
+    /* padrão para todos os elementos do HTML */
+    /* position: static; */
+    /* position: relative; */
+    /* top: 20px; */
+    /* left: 10px;*/
+    
+    /* z-index: -1; (header fica por baixo da sessão -1)*/
+
+    /* position: relative; */
+    /* header h1{
+    position: absolute;
+    right: 0;
+    bottom: 0; } */
+    /* position: fixed;
+    bottom: 10px; */
+
+    /* position: sticky; top: 0; (fica colodo no header) */
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+
+    /* comportamento padrão do display: flex; = row (linha) */
+
+    /* comportamento padrão */
+    flex-direction: row;
+
+    /* justify-content: flex-start; */  /*flex-center*/
+
+    /* espaço entre os elementos */
+    justify-content: center;
+
+    /* comportamento padrão de alinhamento de item*/
+    /* lida com o alinhamento do conteudo no eixo vertical */
+    /* align-items: stretch; */
+    align-items: center;
+
+    height: 100px;
+
+    padding: 0 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header a {
+    color: blueviolet;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /*cria um espaçamento entre os itens da lista*/
 }
